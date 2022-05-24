@@ -1,15 +1,15 @@
 import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
-import { RenderSectionHeading } from "../common/CommonComponent";
+import { RenderSectionHeading } from "../common/CommonComponents";
 import { useStyles } from "./BodyStyles";
 
-import image1 from "../../pictures/4.jpg";
-import image2 from "../../pictures/3.jpg";
-import image3 from "../../pictures/5.jpg";
-import image4 from "../../pictures/6.jpg";
-import image5 from "../../pictures/7.jpg";
-import image6 from "../../pictures/8.jpg";
-import ScrollAnimation from "react-animate-on-scroll";
+import image1 from "../../../pictures/4.jpg";
+import image2 from "../../../pictures/3.jpg";
+import image3 from "../../../pictures/5.jpg";
+import image4 from "../../../pictures/6.jpg";
+import image5 from "../../../pictures/7.jpg";
+import image6 from "../../../pictures/8.jpg";
+//import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Portfolio() {
   const classes = useStyles();
@@ -25,11 +25,10 @@ export default function Portfolio() {
 
   return (
     <Box className={classes.sectionDark} id='Portfolio'>
-      <ScrollAnimation animateIn='fadeIn'>
         <Grid
           container
           style={{
-            displa: "flex",
+            display: "flex",
             justifyContent: "center",
             alignContent: "center",
           }}>
@@ -65,7 +64,6 @@ export default function Portfolio() {
             ))}
           </Grid>
         </Container>
-      </ScrollAnimation>
     </Box>
   );
 }

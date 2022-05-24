@@ -28,13 +28,13 @@ export const useStyles = makeStyles((theme) => ({
             fontsize:"2rem",
         },
     },
-Headerdesc:{
-    top:"50%",
-    fontSize:"2rem",
-    margin:theme.spacing(1,0),[theme.breakpoints.down("xs")]:{
-        fontsize:"1.5rem", margin: theme.spacing(2, 0),
-},
-},
+    headerDesc: {
+      fontSize: "3rem",
+      margin: theme.spacing(1, 0),
+      [theme.breakpoints.down("xs")]: {
+        fontSize: "2rem",
+      },
+    },
 
     Navbarcom:{
         backgroundColor:'#003003',
@@ -67,7 +67,6 @@ Headerdesc:{
     "&:before": {
       width: "40px",
       height: "40px",
-      backgroundColor:"blue",
       content: '""',
       borderRadius: "50%",
     },
