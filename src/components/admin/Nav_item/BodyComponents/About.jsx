@@ -3,10 +3,12 @@ import React from "react";
 import { useStyles } from "./BodyStyles";
 import Pictures from "../../../pictures/home.avif";
 import { RenderSectionHeading, CardMedia } from "../common/CommonComponents";
-//import AcUnitIcon from "@material-ui/icons/AcUnit";
-//import PermDeviceInformationIcon from "@material-ui/icons/PermDeviceInformation";
-//import ToysIcon from "@material-ui/icons/Toys";
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+import PermDeviceInformationIcon from '@mui/icons-material/PermDeviceInformation';
+import ToysIcon from '@mui/icons-material/Toys';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import Portfolio from './Portfolio'
+import Footer from './Footer'
 //import ScrollAnimation from "react-animate-on-scroll";
 
 export default function AboutUs() {
@@ -21,20 +23,21 @@ export default function AboutUs() {
     {
       title: "Graphic Design",
       description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
-     //icon: <ToysIcon />,
+     icon: <ToysIcon />,
     },
     {
       title: "Mobile Apps",
       description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
-      //icon: <PermDeviceInformationIcon />,
+      icon: <PermDeviceInformationIcon />,
     },
     {
       title: "Marketing",
       description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
-     // icon: <AcUnitIcon />,
+     icon: <AcUnitIcon />,
     },
   ];
   return (
+    <>
     <Box className={classes.section} id='About'>
         <Container>
           <Grid container spacing={1}>
@@ -50,7 +53,7 @@ export default function AboutUs() {
             <Grid item xs={12} sm={7}>
               {RenderSectionHeading({
                 smallText: "ABOUT ME",
-                heading: "Hello I'm Himanshu lal",
+                heading: "HELLO CODERS AND DEVELOPER",
                 description:
                   "A self taught developer who loves to codes something that wiil impact majority of the people in good waay !",
               })}
@@ -75,5 +78,8 @@ export default function AboutUs() {
           </Grid>
         </Container>
     </Box>
+    <Portfolio />
+    <Footer />
+        </>
   );
 }

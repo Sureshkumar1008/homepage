@@ -5,6 +5,7 @@ import Pictures from "../../../pictures/2.jpg";
 import { RenderSectionHeading } from "../common/CommonComponents"
 import { RenderInputText } from "../common/FormComponents";
 //import ScrollAnimation from "react-animate-on-scroll";
+import Footer from './Footer'
 
 export default function Contact() {
   const classes = useStyles();
@@ -35,6 +36,7 @@ export default function Contact() {
   };
 
   return (
+    <>
     <Box className={classes.section} id='Contact'>
         <Container maxWidth='xl'>
           <Grid container spacing={1}>
@@ -88,7 +90,7 @@ export default function Contact() {
                     })}
                   </Grid>
                   <Grid item xs={12} sm={8} style={{ marginBottom: "16px" }}>
-                    <Button
+                    <Button 
                       variant='outlined'
                       type='submit'
                       fullWidth={true}
@@ -102,5 +104,8 @@ export default function Contact() {
           </Grid>
         </Container>
     </Box>
+    <Footer />
+    </>
+    
   );
 }

@@ -10,7 +10,7 @@ import Dashboard from "./admin/Dashboard/Dashboard";
 import Navtab from './Form/tabs/Navtab';
 import View from "./Form/view/view";
 import Protfolio from "./admin/Nav_item/BodyComponents/Portfolio"
-//import Footer from "./admin/Nav_item/BodyComponents/Footer"
+import Footer from "./admin/Nav_item/BodyComponents/Footer"
 function App() {
 	
 	return (
@@ -27,6 +27,7 @@ function App() {
 					<Route path="/signin" element={<SignInSide />} />
 					<Route path="/view" element={<View />} />
 					<Route path="/portfolio" element={<Protfolio/>} />
+					<Route path="/footer" element={<Footer/>} />
 
 				</Routes>
 			

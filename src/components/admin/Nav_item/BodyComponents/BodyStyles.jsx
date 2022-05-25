@@ -3,7 +3,7 @@ import { Theme } from "../../../Theme";
 
 export const useStyles = makeStyles((theme) => ({
   section: {
-    
+    backgroundColor: Theme.colors.base1,
     padding: theme.spacing(10, 0, 8, 0),
   },
   sectionDark: {
@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => ({
 
   //common
   divider: {
-    width: "64px",
+    width: "570px",
     height: "4px",
     backgroundColor: Theme.colors.primary,
   },
@@ -82,7 +82,8 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   submitBtn: {
-    backgroundColor: Theme.colors.primary,
+    backgroundColor:'red',
+    borderRadius: "30px",
     color: Theme.colors.base2,
     "&:hover": {
       backgroundColor: Theme.colors.primary1,

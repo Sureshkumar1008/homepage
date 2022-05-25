@@ -29,6 +29,7 @@ export default function Portfolio() {
           container
           style={{
             display: "flex",
+            position:"relative",
             justifyContent: "center",
             alignContent: "center",
           }}>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, IconButton, Typography } from "@material-ui/core";
 import { useStyles } from "./BodyStyles";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import { Link } from "react-scroll";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+//import { Link } from "react-scroll";
 
 export default function Footer() {
   const classes = useStyles();
@@ -17,13 +17,12 @@ export default function Footer() {
         spy={true}
         smooth={true}
         offset={-70}
-        duration={1200}
-        component={Link}>
+        duration={1200}>
         <ArrowUpwardIcon />
       </IconButton>
       <Typography variant='body1' component='h4' align='center' color='inherit'>
         Developed and designed with <FavoriteIcon style={{ color: "red" }} /> by
-        GreatCoders , All Right Reserved © {date.getFullYear()}
+        ICANIOTECH , All Right Reserved © {date.getFullYear()}
       </Typography>
     </Box>
   );
